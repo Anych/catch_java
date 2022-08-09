@@ -11,7 +11,7 @@ public class CatchEmAll {
         throw exception;
     }
 
-    public static void main(String[] args) throws Exception, IOException, ArithmeticException, NumberFormatException {
+    public static void main(String[] args) throws Exception {
         try {
             riskyMethod();
         } catch (FileNotFoundException e) {
