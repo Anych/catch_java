@@ -11,7 +11,15 @@ public class CatchEmAll {
         throw exception;
     }
 
-    public static void main(String[] args) throws Exception {
-        riskyMethod();
+    public static void main(String[] args) throws Exception, IOException, ArithmeticException, NumberFormatException {
+        try {
+            riskyMethod();
+        } catch (FileNotFoundException e) {
+            System.out.println("Resource is missing");
+        } catch (IOException e) {
+            System.out.println("Resource error");
+        } catch (ArithmeticException | NumberFormatException e) {
+            e.printStackTrace();
+        }
     }
 }
