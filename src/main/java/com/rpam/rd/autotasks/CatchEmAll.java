@@ -1,6 +1,7 @@
 package com.rpam.rd.autotasks;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class CatchEmAll {
 
