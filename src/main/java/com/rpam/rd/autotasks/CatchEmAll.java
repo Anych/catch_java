@@ -16,11 +16,11 @@ public class CatchEmAll {
         try {
             riskyMethod();
         } catch (FileNotFoundException e) {
-            throw new IllegalArgumentException("Resource is missing");
+            throw new IllegalArgumentException("Resource is missing", e);
         } catch (IOException e) {
-            throw new IllegalArgumentException("Resource error");
+            throw new IllegalArgumentException("Resource error", e);
         } catch (ArithmeticException | NumberFormatException e) {
-            System.err.print(e);
+            System.err.print(e.getMessage());
         }
     }
 }
